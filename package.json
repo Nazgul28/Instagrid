@@ -1,0 +1,27 @@
+{
+  "name": "project3",
+  "version": "1.0.0",
+  "description": "\"project-3\",",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "browser-sync": "^2.9.10",
+    "gulp-connect": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazgul28/project-3.git"
+  },
+  "author": "Luis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nazgul28/project-3/issues"
+  },
+  "homepage": "https://github.com/Nazgul28/project-3#readme"
+}
