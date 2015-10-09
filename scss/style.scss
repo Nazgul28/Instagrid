@@ -1,0 +1,88 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "mixin";
+
+
+
+body {
+    @include tablet {
+       background-color: red;
+   }
+
+   @include desktop {
+       background-color: blue;
+   }
+}
+
+
+
+/* Header */
+
+.top {width: 150px;
+    height: 40px;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    margin: 0 auto;
+}
+
+.search{
+background-image: url('../images/pattern.png'); 
+display: block;
+padding: 100px 0px 100px 0px;
+}
+
+.search img{
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
+
+.search input{
+    display: block;
+    margin: 0 auto;
+
+
+}
+
+
+.content{
+display: block;
+width: 150px;
+height: 50px;
+padding: 100px 0px 100px 0px;
+margin: 0 auto;
+border: 2px solid $border-grid-color;
+
+}
+
+
+.button{
+display: block;
+
+}
+
+.button button{
+display: block;
+margin: 0 auto;
+
+}
+
+
+/* Tablet */
+// @media screen and (min-width: 600px){
+// body{ background-color: green;}
+
+// }
+
+
+
+// /* Desktop */
+
+// @media screen and (min-width: 1000px){
+// body{ background-color: blue;}
+
+// }  
+
