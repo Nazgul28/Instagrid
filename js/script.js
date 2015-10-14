@@ -2,6 +2,8 @@
 $(function () {
     $('#tag-search').submit(function (event){
       event.preventDefault();
+            $('.wait').show();
+
 
 var anytag = '';
 var tagName = $('#tag').val();
@@ -30,15 +32,15 @@ dataType: 'jsonp'
   });
     $('.tag-list').empty();
       $('.tag-list').append(anytag);
+              $('.wait').hide();
+
   });
-        });
-    });
+       }); 
+    })
+
+$('.results').click(function(){
+  $('.tag-list').empty();
+});
 
 
-// var imageList = $('<ul class="image-list"></ul>');
 
-// each results 
-// 	imageList.append(result)
-
-// content.empty()
-// content.append(inageList)

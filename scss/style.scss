@@ -7,27 +7,27 @@
 
 body {
 
-font-size: 16px;
-font-family: $body-font-family;
-font-color: $font-color;
-margin: 0 auto;
+  font-size: $font-size;
+  font-weight: lighter;
+  font-family: $body-font-family;
+  font-color: $font-color;
+  margin: 0 auto;
 
 
   @include bp(tablet) {
-     // background-color: red;
-
-  }
+}
 
    @include bp(desktop) {
-       // background-color: green;
-   }
+
+}
 }
 
 
 
-/* Header */
+// Header - logo //
 
-.top {width: 150px;
+.top {
+    width: 150px;
     height: 40px;
     padding: 10px 0px 10px 0px;
     display: block;
@@ -41,107 +41,124 @@ margin: 0 auto;
     text-align: left;
 }
 }
-
+// Instagram - search box //
 .instagram{
-background-image: url('../images/pattern.png'); 
-display: flex;
-flex-direction: column;
-justify-content: center; 
-align-items: center;
-padding-top: 10px 0px 10px 0px;
+  background-image: url('../images/pattern.png'); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  padding-top: 10px 0px 10px 0px;
 }
 
 .instagram img{
-    width: 150px;
-    height: 70px;
-    display: block;
-    margin: 0 auto;
-    padding: 10px 0px 25px 0px;
+  width: 150px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 0px 25px 0px;
 }
 
 .instagram form{
-display: block;
-margin: 0 auto;
-padding-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .instagram input{
-height: 20px;
-width: 150px;
-padding: 0px 10px 0px 10px;
+  height: 20px;
+  width: 150px;
+  padding: 0px 10px 0px 10px;
 }
 
 .instagram button{
-height: 24px;
-width: 28px;
+  height: 24px;
+  width: 28px;
 }
+
+// Results - images are going to be displayed here // 
 
 
 .results{
-display: flex;
-border: 2px solid $border-grid-color;
-margin: 2px;
-flex-direction: column;
-min-height: 100vh;
+  display: flex;
+  border: 2px solid $border-grid-color;
+  margin: 2px;
+  flex-direction: column;
+  min-height: 100vh;
 } 
 
+// mobile / tablet / desktop screens
 .results li{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-border: 2px solid $border-around-images;
-margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 2px solid $border-around-images;
+  margin: 5px;
 
 @include bp(tablet) {
-width: 30%;
-justify-content: center;
-margin: 7px;
+  width: 30%;
+  justify-content: center;
+  margin: 7px;
 }
 
 @include bp(desktop) {
-width: 23%;
-justify-content: center;
+  width: 23%;
+  justify-content: center;
 }
 }
 
 
 li img{
-max-width: 100%;
+  max-width: 100%;
+}
+
+// img search-tag before running the search
+
+.tag-list {
+  @include bp (tablet) {
+  display: flex;
+  flex-wrap: wrap;
+}
+}
+
+.imgsearch {
+@include bp(tablet) {
+  width: 100%;
+}
 }
 
 .profile {
-display: flex;
-flex-direction: row;
-flex: 1;
-flex-wrap: wrap;
-padding-bottom: 10px;
-justify-content: space-between;
-padding: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  padding: 10px 15px 10px 15px;
 
 @include bp(tablet) {
-display: flex;
-flex-direction: row;
-flex: 1;
-flex-wrap: wrap;
-padding-bottom: 10px;
-justify-content: space-between;
-padding: 10px 5px 10px 5px;
-
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  justify-content: space-between;
+  padding: 10px 5px 10px 5px;
+}
 }
 
-}
-
+//Profile section of the search
 .usernameandicons{
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
 }
 
 h3{
-font-family: $username-font-family;
-font-weight: bold;
-font-size: 17px;
+  font-family: $username-font-family;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 
@@ -153,42 +170,45 @@ font-size: 17px;
 
 .icons{
   padding-top: 5px;
-  p { display: inline; }
+  p{ display: inline; }
 }
 
-
+// Load More button - style
 .button{
-display: block;
-padding: 20px 0px 20px 0px;
-border-bottom: 1px solid $border-grid-color;
+  display: block;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px solid $border-grid-color;
 }
 
 .button button{
-display: block;
-margin: 0 auto;
-background-color: $button-color;
-padding: 5px 30px 5px 30px;
+  display: block;
+  margin: 0 auto;
+  background-color: $button-color;
+  padding: 5px 30px 5px 30px;
 }
+
+// Footer - style
 
 h4{
-font-size: 10px;
-color: $border-grid-color;
+  font-size: 10px;
+  color: $border-grid-color;
 }
 .copyright {
-display: block;
-text-align: center;
-padding-top: 10px;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
 }
 
-///////////
+// Loading Gif 'Wait' button
 
-.tag-list {
+.wait{ 
+  background-color: rgba (255, 255, 255, .8) 50% 50% no-repeat;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center;
+}
 
-  @include bp (tablet) {
-display: flex;
-flex-wrap: wrap;
-}
-}
 
 
 

@@ -49,38 +49,38 @@ table {
 @font-face {
   font-family: 'opensans';
   src: url("../fonts/opensans-bold-webfont.eot");
-  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-bold-webfont.woff2") format("woff2"), url("fonts/opensans-bold-webfont.woff") format("woff"), url("fonts/opensans-bold-webfont.ttf") format("truetype"), url("fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  src: url("../fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/opensans-bold-webfont.woff") format("woff"), url("../fonts/opensans-bold-webfont.ttf") format("truetype"), url("../fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'open_sans';
   src: url("../fonts/opensans-bolditalic-webfont.eot");
-  src: url("../fonts/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("fonts/opensans-bolditalic-webfont.woff") format("woff"), url("fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+  src: url("../fonts/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("../fonts/opensans-bolditalic-webfont.woff") format("woff"), url("../fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("../fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'open_sans';
   src: url("../fonts/opensans-light-webfont.eot");
-  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-light-webfont.woff2") format("woff2"), url("fonts/opensans-light-webfont.woff") format("woff"), url("fonts/opensans-light-webfont.ttf") format("truetype"), url("fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+  src: url("../fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-light-webfont.woff2") format("woff2"), url("../fonts/opensans-light-webfont.woff") format("woff"), url("../fonts/opensans-light-webfont.ttf") format("truetype"), url("../fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
   font-weight: lighter;
   font-style: normal; }
 
 @font-face {
   font-family: 'open_sans';
   src: url("../fonts/opensans-lightitalic-webfont.eot");
-  src: url("../fonts/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("fonts/opensans-lightitalic-webfont.woff") format("woff"), url("fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+  src: url("../fonts/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/opensans-lightitalic-webfont.woff") format("woff"), url("../fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("../fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
   font-weight: lighter;
   font-style: italic; }
 
 body {
-  font-size: 16px;
+  font-size: 12px;
+  font-weight: lighter;
   font-family: "open_sans";
   font-color: #2e2e2e;
   margin: 0 auto; }
 
-/* Header */
 .top {
   width: 150px;
   height: 40px;
@@ -97,10 +97,18 @@ body {
 
 .instagram {
   background-image: url("../images/pattern.png");
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 10px 0px 10px 0px; }
 
 .instagram img {
@@ -125,53 +133,106 @@ body {
   width: 28px; }
 
 .results {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   border: 2px solid #c2c2c2;
   margin: 2px;
-  flex-direction: column;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh; }
 
 .results li {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 2px solid #dbdbdb;
   margin: 5px; }
   @media (min-width: 600px) {
     .results li {
       width: 30%;
-      justify-content: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       margin: 7px; } }
   @media (min-width: 1000px) {
     .results li {
       width: 23%;
-      justify-content: center; } }
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 li img {
   max-width: 100%; }
 
+@media (min-width: 600px) {
+  .tag-list {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+
+@media (min-width: 600px) {
+  .imgsearch {
+    width: 100%; } }
+
 .profile {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex: 1;
-  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding-bottom: 10px;
-  justify-content: space-between;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px 15px 10px 15px; }
   @media (min-width: 600px) {
     .profile {
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
-      flex: 1;
-      flex-wrap: wrap;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
       padding-bottom: 10px;
-      justify-content: space-between;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       padding: 10px 5px 10px 5px; } }
 
 .usernameandicons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: right; }
 
 h3 {
@@ -209,7 +270,9 @@ h4 {
   text-align: center;
   padding-top: 10px; }
 
-@media (min-width: 600px) {
-  .tag-list {
-    display: flex;
-    flex-wrap: wrap; } }
+.wait {
+  background-color: rgba 255, 255, 255, 0.8 50% 50% no-repeat;
+  width: 100%;
+  height: 100%;
+  display: none;
+  text-align: center; }
