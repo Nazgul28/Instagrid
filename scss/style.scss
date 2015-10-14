@@ -6,12 +6,20 @@
 
 
 body {
-    @include tablet {
-       background-color: red;
-   }
 
-   @include desktop {
-       background-color: blue;
+font-size: 16px;
+font-family: $body-font-family;
+font-color: $font-color;
+margin: 0 auto;
+
+
+  @include bp(tablet) {
+     // background-color: red;
+
+  }
+
+   @include bp(desktop) {
+       // background-color: green;
    }
 }
 
@@ -24,65 +32,163 @@ body {
     padding: 10px 0px 10px 0px;
     display: block;
     margin: 0 auto;
-}
 
-.search{
-background-image: url('../images/pattern.png'); 
-display: block;
-padding: 100px 0px 100px 0px;
-}
-
-.search img{
+@include bp(tablet) {
     width: 150px;
-    height: 50px;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 35px;
+    height: 40px;
+    padding: 10px 0px 10px 20px;
+    display: inline-block;
+    text-align: left;
+}
 }
 
-.search input{
-    display: block;
-    margin: 0 auto;
-
-
+.instagram{
+background-image: url('../images/pattern.png'); 
+display: flex;
+flex-direction: column;
+justify-content: center; 
+align-items: center;
+padding-top: 10px 0px 10px 0px;
 }
 
+.instagram img{
+    width: 150px;
+    height: 70px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0px 25px 0px;
+}
 
-.content{
+.instagram form{
 display: block;
-width: 150px;
-height: 50px;
-padding: 100px 0px 100px 0px;
 margin: 0 auto;
-border: 2px solid $border-grid-color;
+padding-bottom: 10px;
+}
 
+.instagram input{
+height: 20px;
+width: 150px;
+padding: 0px 10px 0px 10px;
+}
+
+.instagram button{
+height: 24px;
+width: 28px;
+}
+
+
+.results{
+display: flex;
+border: 2px solid $border-grid-color;
+margin: 2px;
+flex-direction: column;
+min-height: 100vh;
+} 
+
+.results li{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border: 2px solid $border-around-images;
+margin: 5px;
+
+@include bp(tablet) {
+width: 30%;
+justify-content: center;
+margin: 7px;
+}
+
+@include bp(desktop) {
+width: 23%;
+justify-content: center;
+}
+}
+
+
+li img{
+max-width: 100%;
+}
+
+.profile {
+display: flex;
+flex-direction: row;
+flex: 1;
+flex-wrap: wrap;
+padding-bottom: 10px;
+justify-content: space-between;
+padding: 10px 15px 10px 15px;
+
+@include bp(tablet) {
+display: flex;
+flex-direction: row;
+flex: 1;
+flex-wrap: wrap;
+padding-bottom: 10px;
+justify-content: space-between;
+padding: 10px 5px 10px 5px;
+
+}
+
+}
+
+.usernameandicons{
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: right;
+}
+
+h3{
+font-family: $username-font-family;
+font-weight: bold;
+font-size: 17px;
+}
+
+
+.profilepic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.icons{
+  padding-top: 5px;
+  p { display: inline; }
 }
 
 
 .button{
 display: block;
-
+padding: 20px 0px 20px 0px;
+border-bottom: 1px solid $border-grid-color;
 }
 
 .button button{
 display: block;
 margin: 0 auto;
+background-color: $button-color;
+padding: 5px 30px 5px 30px;
+}
 
+h4{
+font-size: 10px;
+color: $border-grid-color;
+}
+.copyright {
+display: block;
+text-align: center;
+padding-top: 10px;
+}
+
+///////////
+
+.tag-list {
+
+  @include bp (tablet) {
+display: flex;
+flex-wrap: wrap;
+}
 }
 
 
-/* Tablet */
-// @media screen and (min-width: 600px){
-// body{ background-color: green;}
-
-// }
-
-
-
-// /* Desktop */
-
-// @media screen and (min-width: 1000px){
-// body{ background-color: blue;}
-
-// }  
 
