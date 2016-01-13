@@ -15,11 +15,11 @@ body {
 
 
   @include bp(tablet) {
-}
+  }
 
-   @include bp(desktop) {
+  @include bp(desktop) {
 
-}
+  }
 }
 
 
@@ -27,19 +27,19 @@ body {
 // Header - logo //
 
 .top {
-    width: 150px;
-    height: 40px;
-    padding: 10px 0px 10px 0px;
-    display: block;
-    margin: 0 auto;
+  width: 150px;
+  height: 40px;
+  padding: 10px 0px 10px 0px;
+  display: block;
+  margin: 0 auto;
 
-@include bp(tablet) {
+  @include bp(tablet) {
     width: 150px;
     height: 40px;
     padding: 10px 0px 10px 20px;
     display: inline-block;
     text-align: left;
-}
+  }
 }
 // Instagram - search box //
 .instagram{
@@ -95,16 +95,16 @@ body {
   border: 2px solid $border-around-images;
   margin: 5px;
 
-@include bp(tablet) {
-  width: 30%;
-  justify-content: center;
-  margin: 7px;
-}
+  @include bp(tablet) {
+    width: 30%;
+    justify-content: center;
+    margin: 7px;
+  }
 
-@include bp(desktop) {
-  width: 23%;
-  justify-content: center;
-}
+  @include bp(desktop) {
+    width: 23%;
+    justify-content: center;
+  }
 }
 
 
@@ -116,15 +116,15 @@ li img{
 
 .tag-list {
   @include bp (tablet) {
-  display: flex;
-  flex-wrap: wrap;
-}
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .imgsearch {
-@include bp(tablet) {
-  width: 100%;
-}
+  @include bp(tablet) {
+    width: 100%;
+  }
 }
 
 .profile {
@@ -136,15 +136,15 @@ li img{
   justify-content: space-between;
   padding: 10px 15px 10px 15px;
 
-@include bp(tablet) {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  justify-content: space-between;
-  padding: 10px 5px 10px 5px;
-}
+  @include bp(tablet) {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    padding: 10px 5px 10px 5px;
+  }
 }
 
 //Profile section of the search
