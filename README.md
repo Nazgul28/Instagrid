@@ -3,6 +3,7 @@
 It was a really interesting and challenging project. It was my 3rd project at RED Academy.
 
 Basically I had to: 
+
 Dynamically fetch photos and populate them in a webpage via the Instagram API based a text string input into a search field;
 
 Link each returned image to its URL on Instagram (unless undertaking lightbox stretch goal);
